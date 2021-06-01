@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTaskActivity">
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="10dp"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="UPDATE DATA"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Tanggal" />
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Pemasukkan"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextFinishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:hint="Pengeluaran"
+            android:inputType="number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_update"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_delete"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorRed"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

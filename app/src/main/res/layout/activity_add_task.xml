@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity"
+    >
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="INPUT DATA"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/editTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/editTextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Income"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/editTextFinishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expenditure"
+            android:inputType="number"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="20dp"
+            android:id="@+id/button_save"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
